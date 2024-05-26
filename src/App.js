@@ -1,10 +1,16 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import RoutesProviders from "./routes/routes";
 import { ChakraProvider } from '@chakra-ui/react'
+
 function App() {
   return (
-    <ChakraProvider>
-     app
-    </ChakraProvider>
+    <BrowserRouter>
+      <ChakraProvider>
+        <RoutesProviders />
+      </ChakraProvider>
+    </BrowserRouter>
+
   );
 }
 
